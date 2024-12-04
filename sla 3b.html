@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 40%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Car Registration</h2>
+        <form action="submit_car_registration.php" method="POST">
+            <!-- Car Make -->
+            <div class="form-group">
+                <label for="car_make">Car Make:</label>
+                <input type="text" id="car_make" name="car_make" required>
+            </div>
+
+            <!-- Car Model -->
+            <div class="form-group">
+                <label for="car_model">Car Model:</label>
+                <input type="text" id="car_model" name="car_model" required>
+            </div>
+
+            <!-- License Plate -->
+            <div class="form-group">
+                <label for="license_plate">License Plate:</label>
+                <input type="text" id="license_plate" name="license_plate" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Register Car</button>
+            </div>
+        </form>
+    </div>
+<nav>
+    <a href="sla 3.html">Clkck here to go on first page</a>
+</nav>
+</body>
+</html>
